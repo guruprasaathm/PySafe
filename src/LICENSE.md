@@ -1,8 +1,8 @@
 # The Prosperity Public License 3.0.0
 
-Contributor: $name
+Contributor: [GuruPrasaath Manirajan](https://www.linkedin.com/in/guruprasaath-manirajan-5947031b9/)
 
-Source Code: $address
+Source Code: [Github/PySafe](https://github.com/GuruPrasaathM/PySafe)
 
 ## Purpose
 

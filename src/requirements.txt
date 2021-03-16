@@ -1,0 +1,4 @@
+ee==0.14.0
+pyAesCrypt==5.0.0
+cryptography==3.2.1
+pywin32==300

@@ -1,0 +1,23 @@
+what needs be
+
+encryption of json file and being written as file
+  --done at first, done with password on login
+
+decryption of json file and being passed as json
+  --done at login
+
+le template
+	contains username again
+	contains account created time
+	contains sign in times as array
+	contains mail
+
+	contains a dictionary of libraries
+		-contains lib name
+		-contains number of files
+		-contains all file types
+		-contains file edges
+		  -filename
+		  -filepath		  
+		  -filesize
+		  -filekey

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PySafe</title>
+    <link rel="stylesheet" href="./assets/css/addu.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="./assets/js/jqsm.js"></script>
+    <script src="./assets/cjs/main.js"></script>
+    <script src="./assets/cjs/addu.js"></script>
+    <link rel="icon" href="./assets/ico/bear_icon.png"/>
+  </head>
+  <body>
+    <script type="text/javascript">
+      window.resizeTo(1040, 616)
+    </script>
+    <div class="rootcontainerframe">
+      <div class="overlap-group">
+        <div class="add-user-frame">
+          <div class="titleset animate-enter smart-layers-pointers">
+            <h1 class="title-text valign-text-middle secularone-normal-white-60-9px">Account Creation</h1>
+            <div class="bear-svgrepo-com-1">
+              <img src="./assets/png/bearnew.png">
+            </div>
+          </div>
+          <div class="auto-flex3">
+            <div class="overlap-group3">
+              <div class="login-text-top secularone-normal-black-46-9px">Create User</div>
+              <input
+                class="username-entry border-class-1 smart-layers-pointers"
+                id="unameid"
+                name="usernameentry26"
+                placeholder="enter username"
+                type="text"
+                tabindex="1"
+                maxlength="255"
+                autofocus
+                autocomplete="off"
+                spellcheck="false"
+                required
+              ></input>
+              <input
+                class="password-entry border-class-1 smart-layers-pointers"
+                id="pwdid"
+                name="passwordentry27"
+                placeholder="enter password"
+                type="password"
+                tabindex="2"
+                maxlength="255"
+                autofocus
+                autocomplete="off"
+                spellcheck="false"
+                required
+                required
+              ></input>
+              <input
+                class="password-conf-entry border-class-1 smart-layers-pointers"
+                id="cpwdid"
+                name="passwordconfentry28"
+                placeholder="confirm password"
+                type="password"
+                tabindex="3"
+                maxlength="255"
+                autofocus
+                autocomplete="off"
+                spellcheck="false"
+                required
+              ></input>
+            </div>
+            <div class="auto-flex2">
+              <div class="overlap-group2">
+                <div class="login-text-top-1 secularone-normal-black-46-9px">User Email</div>
+                <input
+                  class="l-data-entry border-class-1 smart-layers-pointers"
+                  id="mailid"
+                  name="ldata_entry19"
+                  placeholder="your email"
+                  type="email"
+                  tabindex="4"
+                  maxlength="255"
+                  autofocus
+                  autocomplete="off"
+                  spellcheck="false"
+                  required
+                ></input>
+              </div>
+              <div class="overlap-group4">
+                <div class="apibox" style="cursor: not-allowed"></div>
+                <div class="api-check border-4-3px-curious-blue" style="cursor: not-allowed"></div>
+                <div class="api-text valign-text-middle secularone-normal-black-20-3px" style="cursor: not-allowed">
+                  I want the authentication api (optional)
+                </div>
+              </div>
+              <div class="auto-flex1">
+                <button type="button" id="addsignup" onclick="newaccount()" style="visibility: hidden; display: none;"></button>
+                <label for="addsignup">
+                  <span style="cursor:pointer">
+                    <div class="sign-up smart-layers-pointers" tabindex="5">
+                      <img
+                        class="sign-up-1"
+                        src="./assets/png/signuptext.png"
+                      />
+                    </div>
+                  </span>
+                </label>
+                <button type="button" id="addclear" style="visibility: hidden; display: none;"></button>
+                <label for="addclear" onclick="clearfunc();">
+                  <span style="cursor:pointer">
+                    <div class="overlap-group1" tabindex="6">
+                      <img
+                        class="clear"
+                        src="./assets/png/cleartext.png"
+                      />
+                    </div>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="auto-flex">
+              <button type="button" id="b2login" style="visibility: hidden; display: none;" onclick="window.location.href='./index.html';"></button>
+              <label for="b2login">
+                <span style="cursor:pointer">
+                  <div class="login-svg" tabindex="6">
+                    <img src="./assets/png/acb2login.png">
+                  </div>
+                </span>
+              </label>
+              <button type="button" id="qmarkid" style="visibility: hidden; display: none;"></button>
+              <label for="qmarkid">
+                <span style="cursor:not-allowed">
+                  <div class="reset-svg" tabindex="7">
+                    <div class="overlap-group6">
+                      <div class="question-m-repo-com-1">
+                        <img
+                          class="vector-13"
+                          src="./assets/png/qmark.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </label>
+              <button type="button" id="addinfoid" style="visibility: hidden; display: none;"></button>
+              <label for="addinfoid">
+                <span style="cursor: not-allowed">
+                  <div class="information-svg" tabindex="8">
+                    <img
+                      class="vector-14"
+                      src="./assets/png/addinfo.png"
+                    />
+                  </div>
+                </span>
+              </label>
+              <button type="button" id="addheartid" style="visibility: hidden; display: none;"></button>
+              <label for="addheartid">
+                <span style="cursor: not-allowed"
+                  <div class="heart-svg" tabindex="9">
+                    <img src="./assets/png/addheart.png">
+                  </div>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="footer-root-frame">
+          <p class="credit valign-text-middle secularone-normal-white-16px">
+            <span>
+              <span class="span1">A fun project by </span>
+              <span onclick="window.open('https://www.linkedin.com/in/guruprasaath-manirajan-5947031b9/')" style="cursor:pointer" class="span2">GuruPrasaath Manirajan</span>
+            </span>
+          </p>
+          <span onclick="window.open('https://github.com/GuruPrasaathM')" style="cursor:pointer"><div class="github valign-text-middle secularone-normal-azure-radiance-16px">Github</div></span>
+          <span onclick="window.open('https://guruprasaathm.com/')" style="cursor:pointer"><div class="my-blog valign-text-middle secularone-normal-hollywood-cerise-16px">My Blog</div></span>
+          <span onclick="window.open('mailto:guruprasaathm@gmail.com')" style="cursor:pointer"><div class="email valign-text-middle secularone-normal-electric-violet-16px">Email</div></span>
+          <span onclick="window.open('https://opensource.org/licenses/GPL-2.0')" style="cursor:pointer"><div class="software-license valign-text-middle secularone-normal-canary-16px">Software License</div></span>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var size = [window.width,window.height];
+      $(window).resize(function(){
+        window.resizeTo(1040,616);
+      });
+    </script>
+  </body>
+</html>

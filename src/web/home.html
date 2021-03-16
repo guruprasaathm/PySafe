@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PySafe</title>
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <script src="./eel.js"></script>
+    <script src="./assets/cjs/main.js"></script>
+    <script src="./assets/js/jqsm.js"></script>
+    <link rel="icon" href="./assets/ico/bear_icon.png"/>
+  </head>
+  <body onload="fetchindex();">
+    <script type="text/javascript">
+      window.resizeTo(1040, 615)
+    </script>
+    <div class="global">
+      <div class="home-root-frame">
+        <div class="overlap-group">
+          <div class="content-frame">
+            <div class="top">
+              <img src="./assets/svg/titbear.svg">
+              <h1 class="py-safe-2316 valign-text-middle secularone-normal-white-64px">PySafe</h1>
+            </div>
+            <div class="auto-flex">
+              <div class="lscf border-class-2">
+                <button type="button" id=homeaddbtn onclick="window.location.href='encr.html'" style="visibility: hidden; display: none;"></button>
+                <label for="homeaddbtn">
+                  <span style="cursor:pointer">
+                    <div class="rttg border-class-1">
+                      <div class="rttg-content-sel">
+                        <img src="./assets/svg/homeadd.svg">
+                        <div class="text-2 valign-text-middle secularone-normal-black-27-2px">Create Library</div>
+                      </div>
+                    </div>
+                  </span>
+                </label>
+                <button type="button" id=homeviewbtn onclick="window.location.href='decr.html'" style="visibility: hidden; display: none;"></button>
+                <label for="homeviewbtn">
+                  <span style="cursor:pointer">
+                    <div class="rtbg border-class-1">
+                      <div class="rtbg-content-sel">
+                        <img
+                          class="database-check-1"
+                          src="./assets/svg/homedb.svg"
+                        />
+                        <div class="view-library-2295 valign-text-middle secularone-normal-black-27-2px">View Library</div>
+                      </div>
+                    </div>
+                  </span>
+                </label>
+              </div>
+              <div class="rscf border-class-2" style="cursor: not-allowed">
+                <div class="auto-flex2" style="cursor: not-allowed">
+                  <button type="button" id=homedrivebtn onclick="window.location.href='#'" style="visibility: hidden; display: none;"></button>
+                  <label for="homedrivebtn">
+                    <span style="cursor: not-allowed">
+                      <div class="nw-button-group border-class-1">
+                        <div class="nw-content">
+                          <img src="./assets/svg/homedrive.svg">
+                          <div class="drive-2270 valign-text-middle secularone-normal-white-27-2px">Drive</div>
+                        </div>
+                      </div>
+                    </span>
+                  </label>
+                  <button type="button" id=homeinfobtn onclick="window.location.href='#'" style="visibility: hidden; display: none;"></button>
+                  <label for="homeinfobtn">
+                    <span style="cursor:not-allowed">
+                      <div class="sw-button-group border-class-1">
+                        <div class="sw-content">
+                          <img src="./assets/png/homeinfo.png">
+                          <div class="information-2255 valign-text-middle secularone-normal-white-27-2px">Information</div>
+                        </div>
+                      </div>
+                    </span>
+                  </label>
+                </div>
+                <div class="auto-flex1" style="cursor: not-allowed">
+                  <button type="button" id=homesetbtn onclick="window.location.href='#'" style="visibility: hidden; display: none;"></button>
+                  <label for="homesetbtn">
+                    <span style="cursor: not-allowed">
+                      <div class="ne-button-group border-class-1">
+                        <div class="ne-content">
+                          <div class="overlap-group1-3">
+                            <div class="settings-2262 valign-text-middle secularone-normal-white-27-2px">Settings</div>
+                            <img
+                              class="settings-svg"
+                              src="./assets/svg/homesettings.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </span>
+                  </label>
+                  <button type="button" id=homehelpbtn onclick="window.location.href='#'" style="visibility: hidden; display: none;"></button>
+                  <label for="homehelpbtn">
+                    <span style="cursor: not-allowed">
+                      <div class="se-button-group border-class-1">
+                        <div class="se-content">
+                          <img src="./assets/svg/homehelp.svg">
+                          <div class="help-2246 valign-text-middle secularone-normal-white-27-2px">Help</div>
+                        </div>
+                      </div>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" id=logoutbtn onclick="logout();" style="visibility: hidden; display: none;"></button>
+          <label for="logoutbtn">
+            <span style="cursor:pointer">
+              <div class="logout">
+                <div class="overlap-group5">
+                  <img
+                    class="logout-1"
+                    src="./assets/png/lbt.png"
+                  />
+                </div>
+              </div>
+            </span>
+          </label>
+        </div>
+        <div class="footer-root-frame">
+          <p class="credit-2239 secularone-normal-white-16px">
+            <span class="span0">A fun project by </span><span onclick="window.open('https://www.linkedin.com/in/guruprasaath-manirajan-5947031b9/')" style="cursor:pointer" class="span1">GuruPrasaath Manirajan</span>
+          </p>
+          <span onclick="window.open('https://github.com/GuruPrasaathM')" style="cursor:pointer"><div class="github-2238 valign-text-middle secularone-normal-azure-radiance-16px">Github</div></span>
+          <span onclick="window.open('https://guruprasaathm.com/')" style="cursor:pointer"><div class="my-blog-2237 valign-text-middle secularone-normal-hollywood-cerise-16px">My Blog</div></span>
+          <span onclick="window.open('mailto:guruprasaathm@gmail.com')" style="cursor:pointer"><div class="email-2236 valign-text-middle secularone-normal-electric-violet-16px">Email</div></span>
+          <span onclick="window.open('https://opensource.org/licenses/GPL-2.0')" style="cursor:pointer"><div class="text-1 valign-text-middle secularone-normal-canary-16px">Software License</div></span>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var size = [window.width,window.height];
+      $(window).resize(function(){
+        window.resizeTo(1040,615);
+      });
+    </script>
+  </body>
+</html>

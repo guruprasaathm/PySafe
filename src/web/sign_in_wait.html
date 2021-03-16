@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PySafe - Loading</title>
+    <link rel="stylesheet" href="./assets/css/sign_in_wait.css">
+    <script src="/eel.js"></script>
+    <script src="./assets/js/jqsm.js"></script>
+    <script src="./assets/cjs/main.js"></script>
+    <link rel="icon" href="./assets/ico/bear_icon.png"/>
+  </head>
+  <body>
+    <script type="text/javascript">
+      window.resizeTo(1040, 615)
+    </script>
+    <div class="transitframe">
+      <div class="bear-gifsx-d">
+        <img
+          width="100%"
+          height="100%"
+          src="./assets/gif/bear.gif"
+        />
+      </div>
+      <h1 class="logging-you-in secularone-normal-white-40-5px">Logging you in ...</h1>
+    </div>
+    <div class="footer-root-frame" style="bottom: 0; left:0;">
+      <p class="credit secularone-normal-white-16px">
+        <span class="span0">A fun project by </span><span onclick="window.open('https://www.linkedin.com/in/guruprasaath-manirajan-5947031b9/')" style="cursor: pointer;" class="span1">GuruPrasaath Manirajan</span>
+      </p>
+      <div onclick="window.open('https://github.com/GuruPrasaathM')" style="cursor: pointer;" class="github valign-text-middle secularone-normal-azure-radiance-16px">Github</div>
+      <div onclick="window.open('https://guruprasaathm.com/')" style="cursor: pointer;" class="my-blog valign-text-middle secularone-normal-hollywood-cerise-16px">My Blog</div>
+      <div onclick="window.open('mailto:guruprasaathm@gmail.com')" style="cursor: pointer;" class="email valign-text-middle secularone-normal-electric-violet-16px">Email</div>
+      <div onclick="window.open('https://opensource.org/licenses/GPL-2.0')" style="cursor: pointer;" class="software-license valign-text-middle secularone-normal-canary-16px">Software License</div>
+    </div>
+    <script type="text/javascript">
+      var size = [window.width,window.height];
+      $(window).resize(function(){
+        window.resizeTo(1040,615);
+      });
+    </script>
+  </body>
+  <script type="text/javascript">
+    sleep(3000).then(() => { window.location.href='home.html'; });
+  </script>
+</html>

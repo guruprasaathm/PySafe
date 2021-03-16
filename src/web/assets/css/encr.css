@@ -1,0 +1,755 @@
+@import url("./../css/meyerreset.css");
+@import url("./../font/soblop.css");
+* {
+  box-sizing: border-box;
+}
+a {
+	text-decoration: none
+}
+.addlibframeroot {
+  align-items: flex-start;
+  display: flex;
+  height: 669.87px;
+  overflow: hidden;
+  width: 1024px;
+}
+.addlibframeroot .add-lib-frame {
+  align-items: center;
+  background-color: var(--blue-jeans);
+  display: flex;
+  flex-direction: column;
+  height: 670px;
+  left: 0px;
+  padding: 16px 0;
+  position: absolute;
+  top: 0px;
+  width: 1024px;
+}
+.addlibframeroot .audio-buttonsvg {
+  align-items: flex-start;
+  display: flex;
+  height: 69px;
+  margin-left: 8px;
+  margin-top: 0.35px;
+  overflow: hidden;
+  padding: 0 0px;
+  width: 69px;
+}
+.addlibframeroot .auto-flex {
+  align-items: center;
+  display: flex;
+  margin-left: 16px;
+  min-width: 989px;
+}
+.addlibframeroot .auto-flex1 {
+  align-items: flex-start;
+  display: flex;
+  height: 71px;
+  margin-left: 0.21px;
+  margin-top: 17px;
+  min-width: 456px;
+}
+.addlibframeroot .auto-flex2 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 6.07px;
+  margin-top: 31px;
+  min-width: 609px;
+}
+.addlibframeroot .auto-flex3 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.14px;
+  margin-top: 31px;
+  min-height: 302px;
+  width: 838px;
+}
+.addlibframeroot .auto-flex4 {
+  align-items: flex-end;
+  display: flex;
+  margin-top: 8px;
+  min-width: 823px;
+}
+.addlibframeroot .bear {
+  align-items: flex-end;
+  display: flex;
+  height: 96px;
+  left: 0px;
+  overflow: hidden;
+  padding: 20.5px 0;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.addlibframeroot .clear {
+  align-items: center;
+  background-color: var(--green);
+  border-radius: 6.40000057220459px;
+  box-shadow: 4.266666889190674px 4.266666889190674px 2.6666667461395264px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 58px;
+  margin-bottom: 8.53px;
+  margin-left: 203px;
+  min-width: 227px;
+  padding: 0 55.3px;
+}
+.addlibframeroot .clear-1 {
+  align-items: center;
+  background-color: red;
+  border-radius: 6.40000057220459px;
+  box-shadow: 4.266666889190674px 4.266666889190674px 2.6666667461395264px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 58px;
+  margin-bottom: 6.4px;
+  margin-left: 10px;
+  min-width: 227px;
+  padding: 0 45.1px;
+}
+.addlibframeroot .create-enc--text-hea {
+  height: 67px;
+  letter-spacing: 0px;
+  min-height: 67px;
+  text-align: center;
+  text-decoration: underline;
+  width: 821px;
+}
+.addlibframeroot .credit {
+  align-self: flex-end;
+  height: 24px;
+  letter-spacing: 0px;
+  min-height: 24px;
+  text-align: center;
+  width: 311px;
+}
+.addlibframeroot .decrypt-bu-ontent-sel {
+  align-items: flex-start;
+  display: flex;
+  min-width: 298px;
+}
+.addlibframeroot .decrypt-now-text {
+  height: 56px;
+  letter-spacing: 0px;
+  margin-left: -3px;
+  margin-top: -3.17px;
+  min-height: 56px;
+  text-align: center;
+  width: 297px;
+}
+.addlibframeroot .documents-buttonsvg {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  height: 69px;
+  margin-bottom: 0.35px;
+  margin-left: 8px;
+  overflow: hidden;
+  width: 69px;
+}
+.addlibframeroot .email {
+  height: 17px;
+  letter-spacing: 0px;
+  margin-bottom: 0px;
+  margin-left: 3px;
+  min-height: 17px;
+  text-align: center;
+  width: 56px;
+}
+.addlibframeroot .files-buttonsvg {
+  height: 68px;
+  margin-left: 16px;
+  width: 68px;
+}
+.addlibframeroot .folder-buttonsvg {
+  align-items: flex-end;
+  display: flex;
+  height: 69px;
+  margin-top: 7px;
+  overflow: hidden;
+  padding: 5.6px 0;
+  width: 69px;
+}
+.addlibframeroot .footer-root-frame {
+  align-items: center;
+  background-color: var(--yellow-sunshine);
+  display: flex;
+  height: 43px;
+  left: 0px;
+  padding: 5.9px 12.3px;
+  position: absolute;
+  top: 627px;
+  width: 1024px;
+}
+.addlibframeroot .frame-1 {
+  align-items: flex-start;
+  align-self: center;
+  background-color: black;
+  display: flex;
+  margin-right: 14px;
+  min-width: 821px;
+}
+.addlibframeroot .frame-2 {
+  align-items: flex-start;
+  background-color: black;
+  display: flex;
+  margin-bottom: 1.02px;
+  min-width: 182px;
+}
+.addlibframeroot .frame-3 {
+  align-items: flex-start;
+  background-color: black;
+  display: flex;
+  margin-bottom: 1.02px;
+  margin-left: 22px;
+  min-width: 155px;
+}
+.addlibframeroot .github {
+  height: 17px;
+  letter-spacing: 0px;
+  margin-left: 91px;
+  margin-top: 3.2px;
+  min-height: 17px;
+  text-align: center;
+  width: 66px;
+}
+.addlibframeroot .home {
+  height: 30px;
+  width: 116px;
+}
+.addlibframeroot .images-buttonsvg {
+  align-self: flex-end;
+  height: 70px;
+  margin-left: 8px;
+  width: 69px;
+}
+.addlibframeroot .logout {
+  height: 39px;
+  width: 136px;
+}
+.addlibframeroot .my-blog {
+  height: 17px;
+  letter-spacing: 0px;
+  margin-bottom: 0px;
+  margin-left: 3px;
+  min-height: 17px;
+  text-align: center;
+  width: 68px;
+}
+.addlibframeroot .name-input-field {
+  background-color: white;
+  font-size: 30px;
+  font-family: "Secular One";
+  flex-shrink: 1;
+  height: 50px;
+  margin-bottom: 0.15px;
+  margin-left: 6px;
+  padding-left: 5px;
+  resize: none;
+  width: 291px;
+}
+.addlibframeroot .name-label-text {
+  height: 43px;
+  letter-spacing: 0px;
+  min-height: 43px;
+  text-align: center;
+  width: 182px;
+}
+.addlibframeroot .name-label-text-1 {
+  height: 43px;
+  letter-spacing: 0px;
+  min-height: 43px;
+  text-align: center;
+  width: 155px;
+}
+.addlibframeroot .other-buttonsvg {
+  align-items: flex-end;
+  align-self: flex-end;
+  display: flex;
+  height: 69px;
+  margin-bottom: 0.35px;
+  margin-left: 8px;
+  overflow: hidden;
+  padding: 0.2px 0;
+  width: 69px;
+}
+.addlibframeroot .overlap-group {
+  height: 670px;
+  position: relative;
+  width: 1024px;
+}
+.addlibframeroot .overlap-group1 {
+  height: 55px;
+  position: relative;
+  width: 96px;
+}
+.addlibframeroot .overlap-group1-1 {
+  align-items: flex-start;
+  background-color: red;
+  box-shadow: 0px 4.230508804321289px 4.230508804321289px rgba(0, 0, 0, 0.25);
+  display: flex;
+  min-width: 297px;
+}
+.addlibframeroot .overlap-group2 {
+  align-items: flex-start;
+  background-color: var(--japanese-laurel);
+  box-shadow: 0px 4.230508804321289px 4.230508804321289px rgba(0, 0, 0, 0.25);
+  display: flex;
+  margin-left: 13px;
+  min-width: 297px;
+}
+.addlibframeroot .overlap-group3 {
+  height: 68px;
+  position: relative;
+  width: 69px;
+}
+.addlibframeroot .overlap-group4 {
+  height: 70px;
+  margin-top: -0.35px;
+  position: relative;
+  width: 60px;
+}
+
+.addlibframeroot .overlap-group6 {
+  height: 57px;
+  position: relative;
+  width: 70px;
+}
+.addlibframeroot .overlap-group7 {
+  height: 101px;
+  position: relative;
+  width: 320px;
+}
+.addlibframeroot .py-safe {
+  height: 96px;
+  left: 96px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  width: 224px;
+}
+.addlibframeroot .selected-f-nput-field {
+  background-color: white;
+  overflow: auto;
+  font-size: 20px;
+  font-family: "Secular One";
+  flex-shrink: 1;
+  padding-left: 5px;
+  padding-top: 5px;
+  height: 127px;
+  width: 838px;
+}
+.addlibframeroot .settings-c-root-frame {
+  align-items: flex-start;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 510px;
+  padding: 8.5px 84.8px;
+  width: 1024px;
+}
+.addlibframeroot .software-license {
+  height: 17px;
+  letter-spacing: 0px;
+  margin-bottom: 0px;
+  margin-left: 244px;
+  min-height: 17px;
+  text-align: center;
+  width: 141px;
+}
+.addlibframeroot .span1 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+}
+.addlibframeroot .span2 {
+  color: rgba(0, 40, 255, 1);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+}
+.addlibframeroot .text-buttonsvg {
+  align-self: center;
+  background-size: 100% 100%;
+  height: 67px;
+  margin-left: 14px;
+  width: 67px;
+}
+
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type=radio] + div {
+  cursor: pointer;
+}
+
+[type=radio]:checked + div {
+  outline: 5px solid #db0;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+}
+
+[type=radio]:checked + img {
+  outline: 5px solid #db0;
+}
+
+.addlibframeroot .vector {
+  height: 16px;
+  left: 27px;
+  position: absolute;
+  top: 36px;
+  width: 16px;
+}
+.addlibframeroot .vector-1 {
+  height: 16px;
+  left: 28px;
+  position: absolute;
+  top: 36px;
+  width: 16px;
+}
+.addlibframeroot .vector-10 {
+  height: 2px;
+  left: 19px;
+  position: absolute;
+  top: 21px;
+  width: 18px;
+}
+.addlibframeroot .vector-11 {
+  height: 2px;
+  left: 19px;
+  position: absolute;
+  top: 23px;
+  width: 18px;
+}
+.addlibframeroot .vector-12 {
+  height: 2px;
+  left: 19px;
+  position: absolute;
+  top: 18px;
+  width: 18px;
+}
+.addlibframeroot .vector-13 {
+  height: 2px;
+  left: 19px;
+  position: absolute;
+  top: 26px;
+  width: 18px;
+}
+.addlibframeroot .vector-14 {
+  height: 2px;
+  left: 19px;
+  position: absolute;
+  top: 29px;
+  width: 18px;
+}
+.addlibframeroot .vector-15 {
+  height: 2px;
+  left: 19px;
+  position: absolute;
+  top: 31px;
+  width: 18px;
+}
+.addlibframeroot .vector-16 {
+  height: 30px;
+  left: 33px;
+  position: absolute;
+  top: 19px;
+  width: 23px;
+}
+.addlibframeroot .vector-17 {
+  height: 2px;
+  left: 36px;
+  position: absolute;
+  top: 25px;
+  width: 18px;
+}
+.addlibframeroot .vector-18 {
+  height: 2px;
+  left: 36px;
+  position: absolute;
+  top: 28px;
+  width: 18px;
+}
+.addlibframeroot .vector-19 {
+  height: 2px;
+  left: 36px;
+  position: absolute;
+  top: 23px;
+  width: 18px;
+}
+.addlibframeroot .vector-2 {
+  height: 26px;
+  left: 64px;
+  position: absolute;
+  top: 26px;
+  width: 21px;
+}
+.addlibframeroot .vector-20 {
+  height: 2px;
+  left: 36px;
+  position: absolute;
+  top: 31px;
+  width: 18px;
+}
+.addlibframeroot .vector-21 {
+  height: 2px;
+  left: 36px;
+  position: absolute;
+  top: 33px;
+  width: 18px;
+}
+.addlibframeroot .vector-22 {
+  height: 2px;
+  left: 36px;
+  position: absolute;
+  top: 36px;
+  width: 18px;
+}
+.addlibframeroot .vector-23 {
+  height: 30px;
+  left: 25px;
+  position: absolute;
+  top: 26px;
+  width: 23px;
+}
+.addlibframeroot .vector-24 {
+  height: 8px;
+  left: 39px;
+  position: absolute;
+  top: 26px;
+  width: 8px;
+}
+.addlibframeroot .vector-25 {
+  height: 2px;
+  left: 27px;
+  position: absolute;
+  top: 36px;
+  width: 18px;
+}
+.addlibframeroot .vector-26 {
+  height: 2px;
+  left: 27px;
+  position: absolute;
+  top: 38px;
+  width: 18px;
+}
+.addlibframeroot .vector-27 {
+  height: 2px;
+  left: 27px;
+  position: absolute;
+  top: 41px;
+  width: 18px;
+}
+.addlibframeroot .vector-28 {
+  height: 2px;
+  left: 27px;
+  position: absolute;
+  top: 43px;
+  width: 18px;
+}
+.addlibframeroot .vector-29 {
+  height: 2px;
+  left: 27px;
+  position: absolute;
+  top: 46px;
+  width: 10px;
+}
+.addlibframeroot .vector-3 {
+  height: 26px;
+  left: 64px;
+  position: absolute;
+  top: 27px;
+  width: 20px;
+}
+.addlibframeroot .vector-30 {
+  height: 68px;
+  left: 1px;
+  position: absolute;
+  top: 0px;
+  width: 58px;
+}
+.addlibframeroot .vector-31 {
+  height: 17px;
+  left: 43px;
+  position: absolute;
+  top: 1px;
+  width: 16px;
+}
+.addlibframeroot .vector-32 {
+  height: 14px;
+  left: 15px;
+  position: absolute;
+  top: 43px;
+  width: 28px;
+}
+.addlibframeroot .vector-33 {
+  height: 70px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 60px;
+}
+.addlibframeroot .vector-34 {
+  height: 58px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 62px;
+}
+.addlibframeroot .vector-35 {
+  height: 58px;
+  left: 9px;
+  position: absolute;
+  top: 10px;
+  width: 60px;
+}
+.addlibframeroot .vector-36 {
+  height: 31px;
+  left: 38px;
+  position: absolute;
+  top: 23px;
+  width: 2px;
+}
+.addlibframeroot .vector-37 {
+  height: 3px;
+  left: 23px;
+  position: absolute;
+  top: 37px;
+  width: 32px;
+}
+.addlibframeroot .vector-4 {
+  height: 50px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 91px;
+}
+.addlibframeroot .vector-5 {
+  height: 49px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 90px;
+}
+.addlibframeroot .vector-6 {
+  height: 55px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.addlibframeroot .vector-7 {
+  height: 42px;
+  left: 0px;
+  position: absolute;
+  top: 16px;
+  width: 70px;
+}
+.addlibframeroot .vector-8 {
+  height: 45px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 58px;
+}
+.addlibframeroot .vector-9 {
+  height: 30px;
+  left: 16px;
+  position: absolute;
+  top: 14px;
+  width: 23px;
+}
+.addlibframeroot .video-buttonsvg {
+  height: 70px;
+  margin-left: 8px;
+  width: 69px;
+}
+.blackopsone-normal-red-51-7px {
+  color: red;
+  font-family: "Black Ops One", Helvetica, Arial, serif;
+  font-size: 51.7px;
+  font-style: normal;
+  font-weight: 400;
+}
+.blackopsone-normal-ronchi-50-4px {
+  color: var(--ronchi);
+  font-family: "Black Ops One", Helvetica, Arial, serif;
+  font-size: 50.4px;
+  font-style: normal;
+  font-weight: 400;
+}
+.blackopsone-normal-white-58-2px {
+  color: white;
+  font-family: "Black Ops One", Helvetica, Arial, serif;
+  font-size: 58.2px;
+  font-style: normal;
+  font-weight: 400;
+}
+.border-1-1px-azure-radiance {
+  border: 1.1px solid var(--azure-radiance);
+}
+.border-class-1 {
+  border: 3.2px solid rgba(255, 255, 255, 1);
+}
+.border-class-2 {
+  border: 1.1px solid rgba(255, 0, 0, 1);
+}
+.secularone-normal-azure-radiance-16px {
+  color: var(--azure-radiance-2);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-canary-16px {
+  color: rgba(0, 25, 255, 1);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-electric-violet-16px {
+  color: rgba(173, 0, 255, 1);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-hollywood-cerise-16px {
+  color: rgba(255, 0, 153, 1);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-white-16px {
+  color: transparent;
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+}
+.secularone-normal-white-64px {
+  color: white;
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --azure-radiance: rgba(0, 178, 255, 1);
+  --azure-radiance-2: rgba(0, 132, 255, 1);
+  --blue-jeans: rgba(112, 177, 255, 1);
+  --green: rgba(5, 255, 0, 1);
+  --japanese-laurel: rgba(3, 150, 0, 1);
+  --ronchi: rgba(239, 200, 73, 1);
+  --yellow-sunshine: rgba(255, 244, 0, 1);
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

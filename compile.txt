@@ -1,0 +1,2 @@
+#compile script:
+py -m PyInstaller --noconfirm --clean --name PySafe --onefile --windowed --icon "icon.ico" --add-data "web;web" --hidden-import "Crypto" --hidden-import "Crypto.Cipher" --hidden-import "Crypto.Protocol.KDF" --hidden-import "gridfs" --hidden-import "pymongo" PySafe.py

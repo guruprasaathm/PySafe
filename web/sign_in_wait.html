@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PySafe - Loading</title>
+    <link rel="stylesheet" href="./assets/css/sign_in_wait.css">
+    <script src="/eel.js"></script>
+    <script src="./assets/js/jqsm.js"></script>
+    <script src="./assets/cjs/main.js"></script>
+    <link rel="icon" href="./assets/ico/bear_icon.png"/>
+  </head>
+  <body>
+    <script type="text/javascript">
+      window.resizeTo(1040, 615)
+    </script>
+    <div class="transitframe">
+      <div class="bear-gifsx-d">
+        <img
+          width="100%"
+          height="100%"
+          src="./assets/gif/bear.gif"
+        />
+      </div>
+      <h1 class="logging-you-in secularone-normal-white-40-5px">Logging you in ...</h1>
+    </div>
+        <div class="footer-root-frame">
+          <p class="credit-2239 secularone-normal-white-16px">
+            <span class="span1">A fun project by </span><span onclick="linkedins();" style="cursor:pointer; color:navyblue;" class="span2" id=credlinks>team Kaveri</span>
+          </p>
+          <span 
+            class="github valign-text-middle secularone-normal-azure-radiance-16px"
+            style="cursor: pointer; color:navyblue;"
+            >
+            <span onclick="window.open('https://chennai.vit.ac.in/member/dr-gayathri-devi-s/')">Built under the guidance of Dr. Gayatri Devi for course CSE3086</span>
+          </span>
+        </div>        <script type="text/javascript">
+          var size = [window.width,window.height];
+          $(window).resize(function(){
+            window.resizeTo(1040,616);
+          });
+        </script>
+        <style type="text/css">
+              .loginrootframe .footer-root-frame {
+                align-items: center;
+                background-color: var(--yellow-sunshine);
+                height: 43px;
+                margin-top: 48px;
+                padding: 8px 12.3px;
+                width: 1024px;
+                justify-content: space-between;
+                display: flex;
+              }
+              .loginrootframe .credit {
+                height: 24px;
+                letter-spacing: 0px;
+                min-height: 24px;
+                text-align: center;
+                width: 311px;
+              }
+              .loginrootframe .github {
+                height: 17px;
+                letter-spacing: 0px;
+                min-height: 17px;
+                text-align: center;
+              }
+        </style>
+        <script type="text/javascript">
+          function linkedins() {
+              window.open('https://www.linkedin.com/in/guruprasaath-manirajan-5947031b9/');
+              window.open('https://www.linkedin.com/in/sri-saravanan-706a7025b/');
+              window.open('https://www.linkedin.com/in/m-hariharan-292b86251/');
+          };
+        </script>
+    </script>
+  </body>
+  <script type="text/javascript">
+    sleep(3000).then(() => { window.location.href='home.html'; });
+  </script>
+</html>

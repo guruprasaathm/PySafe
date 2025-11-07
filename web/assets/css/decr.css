@@ -1,0 +1,498 @@
+@import url("./../css/meyerreset.css");
+@import url("./../font/anton.css");
+@import url("./../font/secularone.css");
+* {
+  box-sizing: border-box;
+}
+select {
+    padding:10px 15px;
+    margin: 0;
+    font-family: "Secular One";
+    font-size: 120%;
+    background: #FFF;
+    border: 2px solid #000;
+    display: inline-block;
+    appearance: none;
+    cursor:pointer;
+}
+select {
+  background-image:
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, black, black);
+  background-position:
+    calc(100% - 20px) calc(0.9em + 2px),
+    calc(100% - 15px) calc(0.9em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.225em 2.5em;
+  background-repeat: no-repeat;
+}
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    outline: #000 solid 1px;
+    max-width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    /* 10px 20px */
+}
+
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.inputfile-6 + label {
+    color: #000;
+    font-family: "Secular One";
+}
+
+.inputfile-6 + label {
+    border: 1px solid #000;
+    background-color: #FFF;
+    padding: 0;
+}
+
+.inputfile-6:focus + label,
+.inputfile-6.has-focus + label,
+.inputfile-6 + label:hover {
+    border-color: #000;
+}
+
+.inputfile-6 + label strong {
+    padding: 0.625rem 1.25rem;
+}
+
+.inputfile-6 + label span {
+    padding: 0.725rem 0.925rem;
+}
+
+.inputfile-6 + label span {
+    font-style: normal;
+    font-family: "Secular One";
+    font-size: 90%;
+    width: 614px;
+    min-height: 2em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.inputfile-6 + label strong {
+    border-style: solid;
+    border-color: #000;
+    border-width: thin;
+    height: 100%;
+    color: #FFF;
+    background-color: #000;
+    display: inline-block;
+}
+
+.inputfile-6:focus + label strong,
+.inputfile-6.has-focus + label strong,
+.inputfile-6 + label:hover strong {
+    background-color: #FFF;
+    color: #000;
+}
+
+.anton-normal-black-26px {
+  color: black;
+  font-family: "Anton", Helvetica, Arial, serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+}
+.anton-normal-black-32px {
+  color: black;
+  font-family: "Anton", Helvetica, Arial, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+}
+.anton-normal-white-42-1px {
+  color: white;
+  font-family: "Anton", Helvetica, Arial, serif;
+  font-size: 42.1px;
+  font-style: normal;
+  font-weight: 400;
+}
+.border-class-1 {
+  border: 2.5px solid rgba(0, 0, 0, 1);
+}
+.searchresultsframe {
+  background-color: var(--blue-jeans);
+  height: 576px;
+  position: relative;
+  width: 1024px;
+}
+.searchresultsframe .bear {
+  align-items: flex-end;
+  display: flex;
+  height: 96px;
+  overflow: hidden;
+  padding: 20.5px 0;
+  width: 96px;
+}
+.searchresultsframe .credit {
+  align-self: flex-end;
+  letter-spacing: 0px;
+  min-height: 24px;
+  width: 311px;
+}
+.searchresultsframe .decrypt-button {
+  background-color: #000;
+  box-shadow: 4.266666889190674px 4.266666889190674px 2.6666667461395264px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  display: flex;
+  height: 38px;
+  margin-top: 12px;
+  padding: 0 25.8px;
+  width: 136px;
+}
+.searchresultsframe .decrypt-button:hover{
+  background-color: #FFF;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.searchresultsframe .decrypt-button:hover > #decrtext {
+  color: #000;
+}
+.searchresultsframe .decrypt-text {
+  color: #FFF;
+  height: 26px;
+  letter-spacing: 0px;
+  min-height: 26px;
+  width: 82px;
+}
+.searchresultsframe .decryption-page {
+  align-self: center;
+  height: 61px;
+  letter-spacing: 0px;
+  margin-right: 2px;
+  min-height: 61px;
+  width: 276px;
+}
+.searchresultsframe .email {
+  height: 17px;
+  letter-spacing: 0px;
+  margin-left: 3px;
+  margin-top: 0px;
+  min-height: 17px;
+  text-align: center;
+  width: 56px;
+}
+.searchresultsframe .footer-root-frame {
+  align-items: center;
+  background-color: var(--yellow-sunshine);
+  display: flex;
+  height: 43px;
+  left: 0px;
+  padding: 5.9px 12.3px;
+  position: absolute;
+  bottom: 0px;
+  width: 1024px;
+  justify-content: space-between;
+}
+.rootcontainerframe .github {
+  height: 17px;
+  letter-spacing: 0px;
+  margin-left: 91px;
+  margin-top: 3.2px;
+  min-height: 17px;
+  text-align: center;
+}
+
+.searchresultsframe .frame-31 {
+  align-items: flex-start;
+  display: flex;
+  height: 49px;
+  justify-content: center;
+  left: 3px;
+  min-width: 90px;
+  position: absolute;
+  top: 3px;
+}
+.searchresultsframe .frame-32 {
+  align-items: flex-end;
+  display: flex;
+  height: 26px;
+  justify-content: flex-end;
+  left: 28px;
+  min-width: 57px;
+  position: absolute;
+  top: 26px;
+}
+.searchresultsframe .home {
+  height: 30px;
+  width: 116px;
+}
+.searchresultsframe .home-button {
+  align-items: flex-end;
+  background-color: var(--green);
+  border-radius: 6.399999618530273px;
+  box-shadow: 4.266666412353516px 4.266666412353516px 2.6666665077209473px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 58px;
+  left: 550px;
+  min-width: 227px;
+  padding: 13.8px 55.3px;
+  position: absolute;
+  top: 34px;
+}
+.searchresultsframe .inner-content-frame {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 256px;
+  margin-top: 19px;
+  padding: 9px 0;
+  width: 800px;
+}
+.searchresultsframe .line-1 {
+  height: 3px;
+  left: 0px;
+  position: absolute;
+  top: 100px;
+  width: 1024px;
+}
+.searchresultsframe .line-2 {
+  height: 3px;
+  left: 0px;
+  position: absolute;
+  top: 517px;
+  width: 1024px;
+}
+.searchresultsframe .logout {
+  height: 39px;
+  width: 136px;
+}
+.searchresultsframe .logout-button {
+  align-items: flex-end;
+  background-color: rgba(255, 0, 0, 1);
+  border-radius: 6.399999618530273px;
+  box-shadow: 4.266666412353516px 4.266666412353516px 2.6666665077209473px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 58px;
+  left: 787px;
+  min-width: 227px;
+  padding: 9.3px 45.1px;
+  position: absolute;
+  top: 35px;
+}
+.searchresultsframe .my-blog {
+  height: 17px;
+  letter-spacing: 0px;
+  margin-left: 3px;
+  margin-top: 0px;
+  min-height: 17px;
+  text-align: center;
+  width: 68px;
+}
+.searchresultsframe .overlap-group {
+  height: 560px;
+  left: 0px;
+  position: absolute;
+  top: 16px;
+  width: 1024px;
+}
+.searchresultsframe .overlap-group-1 {
+  height: 88px;
+  position: relative;
+  width: 754px;
+}
+.searchresultsframe .overlap-group1 {
+  height: 55px;
+  position: relative;
+  width: 96px;
+}
+.searchresultsframe .py-safe {
+  align-self: flex-end;
+  height: 96px;
+  letter-spacing: 0px;
+  margin-bottom: -0px;
+  min-height: 96px;
+  text-align: center;
+  width: 224px;
+}
+.searchresultsframe .select-a-library-frame {
+  align-items: flex-start;
+  display: flex;
+  min-width: 754px;
+}
+.searchresultsframe .select-a-library-text {
+  height: 50px;
+  left: 275px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 0px;
+  width: 205px;
+}
+.searchresultsframe .settings-content-root-frame {
+  align-items: flex-start;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 416px;
+  left: 0px;
+  padding: 18.7px 110px;
+  position: absolute;
+  top: 101px;
+  width: 1024px;
+}
+.searchresultsframe .software-license {
+  height: 17px;
+  letter-spacing: 0px;
+  margin-left: 244px;
+  margin-top: 0px;
+  min-height: 17px;
+  text-align: center;
+  width: 141px;
+}
+.searchresultsframe .span0 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+}
+.searchresultsframe .span1 {
+  color: #000;
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+}
+.searchresultsframe .span2 {
+  color: rgba(0, 40, 255, 1);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+}
+.searchresultsframe .target-frame {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 12px;
+  min-width: 754px;
+}
+.searchresultsframe .target-text {
+  height: 50px;
+  left: 242px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 0px;
+  width: 272px;
+}
+.searchresultsframe .top {
+  align-items: flex-start;
+  display: flex;
+  height: 101px;
+  left: 26px;
+  min-width: 318px;
+  position: absolute;
+  top: 0px;
+}
+.searchresultsframe .vector {
+  height: 16px;
+  width: 16px;
+}
+.searchresultsframe .vector-1 {
+  height: 26px;
+  width: 20px;
+}
+.searchresultsframe .vector-2 {
+  height: 49px;
+  width: 90px;
+}
+.searchresultsframe .vector-3 {
+  height: 55px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.searchresultsframe .x-drop-down {
+  background-color: var(--seashell);
+  height: 40px;
+  left: 0px;
+  position: absolute;
+  top: 48px;
+  width: 754px;
+}
+.secularone-normal-azure-radiance-16px {
+  color: var(--azure-radiance);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-canary-16px {
+  color: var(--canary);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-electric-violet-16px {
+  color: var(--electric-violet);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-hollywood-cerise-16px {
+  color: var(--hollywood-cerise);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-white-16px {
+  color: transparent;
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-white-64px {
+  color: white;
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --azure-radiance: rgba(0, 132, 255, 1);
+  --blue-jeans: rgba(112, 177, 255, 1);
+  --canary: rgba(0, 25, 255, 1);
+  --electric-violet: rgba(173, 0, 255, 1);
+  --green: rgba(5, 255, 0, 1);
+  --hollywood-cerise: rgba(255, 0, 153, 1);
+  --seashell: rgba(241, 241, 241, 1);
+  --yellow-sunshine: rgba(255, 244, 0, 1);
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

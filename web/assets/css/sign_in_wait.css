@@ -1,0 +1,151 @@
+@import url("./../css/meyerreset.css");
+@import url("./../font/secularone.css");
+
+* {
+  box-sizing: border-box;
+}
+
+.credit {
+  align-self: flex-end;
+  letter-spacing: 0px;
+  min-height: 24px;
+  width: 311px;
+}
+.email {
+  height: 17px;
+  letter-spacing: 0px;
+  margin-left: 3px;
+  margin-top: 0px;
+  min-height: 17px;
+  text-align: center;
+  width: 56px;
+}
+.footer-root-frame {
+  align-items: center;
+  background-color: var(--yellow-sunshine);
+  display: flex;
+  height: 43px;
+  padding: 5.9px 12.3px;
+  width: 1024px;
+  justify-content: space-between;
+}
+.github {
+  height: 17px;
+  letter-spacing: 0px;
+  margin-left: 91px;
+  margin-top: 3.2px;
+  min-height: 17px;
+  text-align: center;
+}
+.my-blog {
+  height: 17px;
+  letter-spacing: 0px;
+  margin-left: 3px;
+  margin-top: 0px;
+  min-height: 17px;
+  text-align: center;
+  width: 68px;
+}
+.secularone-normal-azure-radiance-16px {
+  color: var(--azure-radiance);
+  font-family: "Secular One", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-canary-16px {
+  color: var(--canary);
+  font-family: "Secular One", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-electric-violet-16px {
+  color: var(--electric-violet);
+  font-family: "Secular One", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-hollywood-cerise-16px {
+  color: var(--hollywood-cerise);
+  font-family: "Secular One", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.secularone-normal-white-16px {
+  color: transparent;
+  font-family: "Secular One", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.software-license {
+  height: 17px;
+  letter-spacing: 0px;
+  margin-left: 244px;
+  margin-top: 0px;
+  min-height: 17px;
+  text-align: center;
+  width: 141px;
+}
+.span0 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+}
+.span1 {
+  color: rgb(0, 0, 0);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+}
+.span2 {
+  color: rgb(21, 25, 255);
+  font-family: "Secular One", Helvetica, Arial, serif;
+  font-size: 16px;
+}
+:root {
+  --blue-jeans: rgba(112, 177, 255, 1);
+  --azure-radiance: rgba(0, 132, 255, 1);
+  --canary: rgba(0, 25, 255, 1);
+  --electric-violet: rgba(173, 0, 255, 1);
+  --hollywood-cerise: rgba(255, 0, 153, 1);
+  --yellow-sunshine: rgba(255, 244, 0, 1);
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.secularone-normal-white-40-5px {
+  color: white;
+  font-family: "Secular One", Helvetica;
+  font-size: 40.5px;
+  font-style: normal;
+  font-weight: 400;
+}
+.transitframe {
+  align-items: flex-end;
+  background-color: var(--blue-jeans);
+  display: flex;
+  flex-direction: column;
+  height: 533px;
+  padding: 130.9px 333.5px;
+  width: 1024px;
+}
+.transitframe .bear-gifsx-d {
+  mix-blend-mode: luminosity;
+  border: 6.93333px solid #000000;
+  box-sizing: border-box;
+  align-self: center;
+  height: 240px;
+  margin-left: 0px;
+  width: 266px;
+}
+.transitframe .logging-you-in {
+  letter-spacing: 0px;
+  margin-top: 14px;
+  min-height: 60px;
+  width: 334px;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PySafe</title>
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <script src="./eel.js"></script>
+    <script src="./assets/cjs/main.js"></script>
+    <script src="./assets/js/jqsm.js"></script>
+    <script src="./assets/cjs/home_db.js"></script>
+    <link rel="icon" href="./assets/ico/bear_icon.png"/>
+    <style>
+      .status-dot{width:12px;height:12px;border-radius:50%;display:inline-block;box-shadow:0 0 0 2px #fff,0 0 0 3px rgba(0,0,0,.05)}
+      .status-on{background:#22c55e}.status-off{background:#ef4444}
+      .modal.hidden{display:none}.modal{position:fixed;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;z-index:1000}
+      .modal-content{width:min(960px,92vw);background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+      .modal-header{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid #eee}
+      .modal-controls{display:flex;gap:12px;align-items:center;padding:10px 16px;border-bottom:1px solid #f3f3f3}
+      .modal-body{max-height:65vh;overflow:auto;padding:8px 16px 16px}
+      .btn-close{background:transparent;border:none;font-size:22px;cursor:pointer}
+      .table{width:100%;border-collapse:collapse}.table th,.table td{border-bottom:1px solid #f1f1f1;padding:8px 6px;text-align:left}
+      .table tr:hover{background:#fafafa}
+      .label{color: #000000; font-weight: 600;}
+
+     /* Numbers bigger and centered */
+      #db-files, #db-texts, #db-storage {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        white-space: nowrap;        
+        text-align: center;
+        padding-top: 10%;
+        color: white;
+      }
+
+      /* Optional: slightly more vertical breathing room in the card tile */
+      #db-card .nw-button-group,
+      .card-db .nw-button-group {
+        width: 100%;
+        padding: 12px 10px;
+      }
+
+      /* Keep the dot colors */
+      .status-on { background: #22c55e; }
+      .status-off { background: #ef4444; }
+      .status-warn { background: #f59e0b; }
+    </style>
+
+  </head>
+  <body onload="fetchindex();">
+    <script type="text/javascript">
+      window.resizeTo(1040, 615)
+    </script>
+    <div class="global">
+      <div class="home-root-frame">
+        <div class="overlap-group">
+          <div class="content-frame">
+            <div class="top">
+              <img src="./assets/svg/titbear.svg">
+              <h1 class="py-safe-2316 valign-text-middle secularone-normal-white-64px">PySafe</h1>
+            </div>
+            <div class="auto-flex">
+              <div class="lscf border-class-2">
+                <button type="button" id=homeaddbtn onclick="window.location.href='encr.html'" style="visibility: hidden; display: none;"></button>
+                <label for="homeaddbtn">
+                  <span style="cursor:pointer">
+                    <div class="rttg border-class-1">
+                      <div class="rttg-content-sel">
+                        <img src="./assets/svg/homeadd.svg">
+                        <div class="text-2 valign-text-middle secularone-normal-black-27-2px">Create Library</div>
+                      </div>
+                    </div>
+                  </span>
+                </label>
+                <button type="button" id=homeviewbtn onclick="window.location.href='decr.html'" style="visibility: hidden; display: none;"></button>
+                <label for="homeviewbtn">
+                  <span style="cursor:pointer">
+                    <div class="rtbg border-class-1">
+                      <div class="rtbg-content-sel">
+                        <img
+                          class="database-check-1"
+                          src="./assets/svg/homedb.svg"
+                        />
+                        <div class="view-library-2295 valign-text-middle secularone-normal-black-27-2px">View Library</div>
+                      </div>
+                    </div>
+                  </span>
+                </label>
+              </div>
+              <div class="rscf border-class-2" style="cursor: not-allowed">
+                <div class="auto-flex2" style="cursor: not-allowed">
+                  <div class="nw-button-group border-class-1" style="width:100%;">
+                    <div class="nw-content" style="display:flex;align-items:center;justify-content:center;gap:0px;">
+                      <div style="display:flex;flex-direction:column;justify-content:space-around;align-items:center;gap:5px;">                        
+                        <span id="db-status" class="status-dot status-off" title="Disconnected"></span>
+                        <div class="drive-2270 valign-text-middle secularone-normal-white-27-2px">DB Status</div>
+                      </div>
+                      <div class="db-metrics" style="display: flex; flex-direction:row; min-width:20vw; justify-content: space-evenly;">
+                        <div><span class="label">Files</span> <span id="db-files">—</span></div>
+                        <div><span class="label">Texts</span> <span id="db-texts">—</span></div>
+                        <div><span class="label" style="padding-left:0.5rem;">Storage</span> <span id="db-storage">—</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" id=homeinfobtn onclick="window.location.href='#'" style="visibility: hidden; display: none;"></button>
+                  <label for="homeinfobtn">
+                    <span style="cursor:not-allowed">
+                      <div class="sw-button-group border-class-1">
+                        <div class="sw-content">
+                          <img src="./assets/png/homeinfo.png">
+                          <div class="information-2255 valign-text-middle secularone-normal-white-27-2px">Information</div>
+                        </div>
+                      </div>
+                    </span>
+                  </label>
+                </div>
+                <div class="auto-flex1" style="cursor: not-allowed">
+                  <button type="button" id=homesetbtn onclick="window.location.href='#'" style="visibility: hidden; display: none;"></button>
+                  <label for="homesetbtn">
+                    <span style="cursor: not-allowed">
+                      <div class="ne-button-group border-class-1">
+                        <div class="ne-content">
+                          <div class="overlap-group1-3">
+                            <div class="settings-2262 valign-text-middle secularone-normal-white-27-2px">Settings</div>
+                            <img
+                              class="settings-svg"
+                              src="./assets/svg/homesettings.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </span>
+                  </label>
+                  <button type="button" id=homehelpbtn onclick="window.location.href='#'" style="visibility: hidden; display: none;"></button>
+                  <label for="homehelpbtn">
+                    <span style="cursor: not-allowed">
+                      <div class="se-button-group border-class-1">
+                        <div class="se-content">
+                          <img src="./assets/svg/homehelp.svg">
+                          <div class="help-2246 valign-text-middle secularone-normal-white-27-2px">Help</div>
+                        </div>
+                      </div>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" id=logoutbtn onclick="logout();" style="visibility: hidden; display: none;"></button>
+          <label for="logoutbtn">
+            <span style="cursor:pointer">
+              <div class="logout">
+                <div class="overlap-group5">
+                  <img
+                    class="logout-1"
+                    src="./assets/png/lbt.png"
+                  />
+                </div>
+              </div>
+            </span>
+          </label>
+        </div>
+        <div class="footer-root-frame">
+          <p class="credit-2239 secularone-normal-white-16px">
+            <span class="span1">A fun project by </span><span onclick="linkedins();" style="cursor:pointer; color:navyblue;" class="span2" id=credlinks>team Kaveri</span>
+          </p>
+          <span 
+            class="github valign-text-middle secularone-normal-azure-radiance-16px"
+            style="cursor: pointer; color:navyblue;"
+            >
+            <button id="btn-open-logs" class="btn btn-secondary" style="cursor:pointer">Open Logs</button>
+            <span onclick="window.open('https://chennai.vit.ac.in/member/dr-gayathri-devi-s/')">Built under the guidance of Dr. Gayatri Devi for course CSE3086</span>
+          </span>
+        </div>
+        <script type="text/javascript">
+          var size = [window.width,window.height];
+          $(window).resize(function(){
+            window.resizeTo(1040,616);
+          });
+        </script>
+        <style type="text/css">
+              .loginrootframe .footer-root-frame {
+                align-items: center;
+                background-color: var(--yellow-sunshine);
+                height: 43px;
+                margin-top: 48px;
+                padding: 8px 12.3px;
+                width: 1024px;
+                justify-content: space-between;
+                display: flex;
+              }
+              .loginrootframe .credit {
+                height: 24px;
+                letter-spacing: 0px;
+                min-height: 24px;
+                text-align: center;
+                width: 311px;
+              }
+              .loginrootframe .github {
+                height: 17px;
+                letter-spacing: 0px;
+                min-height: 17px;
+                text-align: center;
+              }
+        </style>
+        <script type="text/javascript">
+          function linkedins() {
+              window.open('https://www.linkedin.com/in/guru-prasaath-manirajan-5947031b9/', '_blank');
+              window.open('https://www.linkedin.com/in/hariharan-manikandan-061b27368/', '_blank');
+          };
+        </script>
+        <!-- === LOGS MODAL === -->
+        <div id="logs-modal" class="modal hidden">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Activity Logs</h3>
+              <button id="logs-close" class="btn-close">×</button>
+            </div>
+
+            <div class="modal-controls">
+              <label>
+                Type:
+                <select id="logs-type">
+                  <option value="access">Access</option>
+                  <option value="auth">Auth</option>
+                </select>
+              </label>
+              <label>
+                Limit:
+                <select id="logs-limit">
+                  <option>50</option><option selected>200</option><option>500</option>
+                </select>
+              </label>
+              <button id="logs-refresh" class="btn btn-primary">Refresh</button>
+              <button id="logs-export" class="btn">Export CSV</button>
+            </div>
+
+            <div class="modal-body">
+              <table id="logs-table" class="table">
+                <thead><tr id="logs-head"></tr></thead>
+                <tbody id="logs-rows"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        </body>
+</html>

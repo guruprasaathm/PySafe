@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>PySafe</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="./assets/cjs/index.js"></script>
+        <script src="/eel.js"></script>
+        <script src="./assets/js/jqsm.js"></script>
+        <link rel="icon" href="./assets/ico/bear_icon.png"/>
+    </head>
+    <body onload="index_ini();">
+        <script type="text/javascript">
+          window.resizeTo(1040, 616)
+        </script>
+        <div class="loginrootframe">
+          <p id="versionnote">V 0.1 Alpha</p>
+          <div class="auto-flex">
+            <div class="login-root-box">
+              <img
+                class="bear-svg"
+                src="./assets/svg/bear.svg"
+              />
+              <div class="login-box-root-frame">
+                <div class="login-content-group">
+                  <h1 class="login-text-top secularone-normal-black-46-9px">Login</h1>
+                  <div class="l-data-entry">
+                    <input
+                      class="username-entry border-class-1"
+                      name="usernameentry0"
+                      id="UserNameId"
+                      placeholder="your username"
+                      type="text"
+                      tabindex="1"
+                      maxlength="255"
+                      autofocus
+                      autocomplete="off"
+                      spellcheck="false"
+                      onfocus="this.removeAttribute('readonly');"
+                      required
+                      readonly 
+                    ></input>
+                    <input
+                      class="password-entry border-class-1"
+                      name="passwordentry1"
+                      id="PasswordID"
+                      placeholder="your password"
+                      type="password"
+                      tabindex="2"
+                      maxlength="255"
+                      autofocus
+                      autocomplete="off"
+                      onfocus="this.removeAttribute('readonly');"
+                      spellcheck="false"
+                      required
+                      readonly 
+                    ></input>
+                  </div>
+                  <button type="button" id="loginsignin" name="signinb" onclick="signinvalidate();" style="visibility: hidden; display: none;"></button>
+                  <label for="loginsignin" class="labsn">
+                    <span style="cursor:pointer">
+                      <div class="sign-in-button" tabindex="3">
+                        <img src="./assets/png/lsignin.png">
+                      </div>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="side-svg-set">
+              <button type="button" id="newacid" style="visibility: hidden; display: none;" onclick="window.location.href='./addu.html';"></button>
+              <label for="newacid">
+                <span style="cursor:pointer" tabindex="4">
+                  <div class="new-ac-svg">
+                    <img src="./assets/png/add.png">
+                  </div>
+                </span>
+              </label>
+              <button type="button" id="resetid" style="visibility: hidden; display: none;"></button>
+              <label for="resetid">
+                <span style="cursor: not-allowed" tabindex="-1">
+                  <div class="reset-svg">
+                    <img src="./assets/png/reset.png">
+                  </div>
+                </span>
+              </label>
+              <button type="button" id="infoid" style="visibility: hidden; display: none;"></button>
+              <label for="infoid">
+                <span style="cursor: not-allowed" tabindex="-1">
+                  <div class="information-svg">
+                    <img src="./assets/png/logininfo.png">
+                  </div>
+                </span>
+              </label>
+              <button type="button" id="heartid" style="visibility: hidden; display: none;"></button>
+              <label for="heartid">
+                <span style="cursor: not-allowed" tabindex="-1">
+                  <div class="heart-svg">
+                    <img src="./assets/png/heart.png">
+                  </div>
+                </span>
+              </label>
+            </div>
+          </div>
+        <div class="footer-root-frame">
+          <p class="credit-2239 secularone-normal-white-16px">
+            <span class="span1">A fun project by </span><span onclick="linkedins();" style="cursor:pointer; color:navyblue;" class="span2" id=credlinks>team Kaveri</span>
+          </p>
+          <span 
+            class="github valign-text-middle secularone-normal-azure-radiance-16px"
+            style="cursor: pointer; color:navyblue;"
+            >
+            <span onclick="window.open('https://chennai.vit.ac.in/member/dr-gayathri-devi-s/')">Built under the guidance of Dr. Gayatri Devi for course CSE3086</span>
+          </span>
+        </div>
+        <script type="text/javascript">
+          var size = [window.width,window.height];
+          $(window).resize(function(){
+            window.resizeTo(1040,616);
+          });
+        </script>
+        <style type="text/css">
+              .loginrootframe .footer-root-frame {
+                align-items: center;
+                background-color: var(--yellow-sunshine);
+                height: 43px;
+                margin-top: 48px;
+                padding: 8px 12.3px;
+                width: 1024px;
+                justify-content: space-between;
+                display: flex;
+              }
+              .loginrootframe .credit {
+                height: 24px;
+                letter-spacing: 0px;
+                min-height: 24px;
+                text-align: center;
+                width: 311px;
+              }
+              .loginrootframe .github {
+                height: 17px;
+                letter-spacing: 0px;
+                min-height: 17px;
+                text-align: center;
+              }
+        </style>
+        <script type="text/javascript">
+          function linkedins() {
+              window.open('https://www.linkedin.com/in/guruprasaath-manirajan-5947031b9/');
+              window.open('https://www.linkedin.com/in/sri-saravanan-706a7025b/');
+              window.open('https://www.linkedin.com/in/m-hariharan-292b86251/');
+          };
+        </script>
+
+    </body>
+</html>

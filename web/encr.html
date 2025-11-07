@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PySafe</title>
+    <link rel="stylesheet" href="./assets/css/encr.css">
+    <script src="./assets/cjs/encr.js"></script>
+    <script src="/eel.js"></script>
+    <script src="./assets/cjs/main.js"></script>
+    <script src="./assets/js/jqsm.js"></script>
+    <link rel="icon" href="./assets/ico/bear_icon.png"/>
+  </head>
+  <body onload="fetchindex();">
+    <script type="text/javascript">
+      window.resizeTo(1040, 709)
+    </script>
+    <div class="addlibframeroot" id="encrframeroot">
+      <div class="overlap-group">
+        <div class="add-lib-frame">
+          <div class="auto-flex">
+            <div class="overlap-group7">
+              <img src="./assets/svg/titbear.svg">
+              <h1 class="py-safe valign-text-middle secularone-normal-white-64px">PySafe</h1>
+            </div>
+            <button type="button" onclick="window.location.href='./home.html';" id=homebut style="visibility: hidden; display: none;"></button>
+              <label for="homebut">
+                <div class="clear">
+                  <span style="cursor:pointer">
+                    <div class="home-button">
+                      <img
+                        class="home"
+                        src="./assets/png/hbt.png"
+                      />
+                    </div>
+                  </span>
+                </div>
+              </label>
+            <button type="button" id=logoutbut onclick="logout();" style="visibility: hidden; display: none;"></button>
+            <label for="logoutbut">
+              <span style="cursor:pointer">
+                <div class="clear-1">
+                  <img
+                    class="logout"
+                    src="./assets/png/lbt.png"
+                  />
+                </div>
+              </span>
+            </label>
+          </div>
+          <div class="settings-c-root-frame">
+            <div class="frame-1">
+              <div class="create-enc--text-hea valign-text-middle blackopsone-normal-red-51-7px">
+                CREATE ENCRYPTED LIBRARY:
+              </div>
+            </div>
+            <div class="auto-flex4" style="display: flex; flex-direction:column;">
+              <div style="display:flex; align-items:center; flex-direction:row; justify-content:center; flex-wrap:nowrap; width:100%;">
+                <div class="frame-2">
+                  <div class="name-label-text valign-text-middle blackopsone-normal-ronchi-50-4px">NAME:</div>
+                  <input
+                    class="name-input-field border-1-1px-azure-radiance"
+                    id="libnameinput"
+                    value=""
+                    maxlength="255"
+                    name="libname"
+                    placeholder="your library name"
+                    type="text"
+                    tabindex="1"
+                    required
+                    autofocus
+                    autocomplete="off"
+                    spellcheck="false"
+                  ></input>
+              <!-- Store in MongoDB toggle -->
+              <div style="display:flex;align-items:center;margin-left: 2rem;">
+                <input id="mongoToggle" type="checkbox" checked style="zoom: 1.5;"/>
+                <label for="mongoToggle" class="name-label-text-1 valign-text-middle blackopsone-normal-ronchi-50-4px" style="cursor:pointer">
+                  MongoDB
+                </label>
+              </div>
+
+                </div>
+              </div>
+              <div style="display:flex; align-items:center; flex-direction:row; justify-content:center; flex-wrap:nowrap; width:100%;">
+                <div class="frame-3">
+                  <div class="name-label-text-1 valign-text-middle blackopsone-normal-ronchi-50-4px">TYPE:</div>
+                </div>
+                <span class="image-radio">
+                  <label>
+                    <input class="rads" type="radio" id="textrad" name="typesel" value="texttype" onclick="typeact();"></input>
+                      <div class="text-buttonsvg">
+                        <img src="./assets/svg/tb.svg">
+                      </div>
+                  </label>
+                </span>
+                <span class="image-radio">
+                  <label>
+                    <input class="rads" type="radio" id="filerad" name="typesel" value="filetype" onclick="typeact();" checked></input>
+                    <img
+                      class="files-buttonsvg"
+                      src="./assets/svg/fb.svg"
+                    />
+                  </label>
+                </span>
+              </div>
+            </div>
+            <div class="auto-flex3">
+              <div
+                class="selected-f-nput-field border-class-2"
+                id="textcanvas"
+              ></div>
+              <textarea
+                class="selected-f-nput-field border-class-2"
+                style="visibility:hidden; display:none;"
+                id="textnput"
+                name="textname"
+                placeholder="enter text to be encrypted"
+                type="text"
+                tabindex="1"
+                required
+                autofocus
+                autocomplete="off"
+                spellcheck="false"
+              ></textarea>
+              <div class="auto-flex1" id="setofsel">
+                <button type="button" id="foldid" style="visibility: hidden; display: none;" onclick="fileselhandler(this);"></button>
+                <label for="foldid" tabindex="2">
+                  <span style="cursor:pointer">
+                    <div class="folder-buttonsvg">
+                      <img src="./assets/svg/foldb.svg" alt="Folder">
+                    </div>
+                  </span>
+                </label>
+                <button type="button" id="docid" style="visibility: hidden; display: none;" onclick="fileselhandler(this);"></button>
+                <label for="docid" tabindex="3">
+                  <span style="cursor:pointer">
+                    <div class="documents-buttonsvg">
+                      <img src="./assets/svg/docb.svg" alt="Documents">
+                    </div>
+                  </span>
+                </label>
+                <button type="button" id="imgid" style="visibility: hidden; display: none;" onclick="fileselhandler(this);"></button>
+                <label for="imgid" tabindex="4">
+                  <span style="cursor:pointer">
+                    <img
+                      class="images-buttonsvg"
+                      src="./assets/svg/imgb.svg"
+                    />
+                  </span>
+                </label>
+                <button type="button" id="vidid" style="visibility: hidden; display: none;" onclick="fileselhandler(this);"></button>
+                <label for="vidid" tabindex="5">
+                  <span style="cursor:pointer">
+                    <img
+                      class="video-buttonsvg"
+                      src="./assets/svg/vidb.svg"
+                    />
+                  </span>
+                </label>
+                <button type="button" id="audid" style="visibility: hidden; display: none;" onclick="fileselhandler(this);"></button>
+                <label for="audid" tabindex="6">
+                  <span style="cursor:pointer">
+                    <div class="audio-buttonsvg">
+                      <img src="./assets/svg/audb.svg" alt="Audio">
+                    </div>
+                  </span>
+                </label>
+                <button type="button" id="othid" style="visibility: hidden; display: none;" onclick="fileselhandler(this);"></button>
+                <label for="othid" tabindex="7">
+                  <span style="cursor:pointer">
+                    <div class="other-buttonsvg">
+                      <img src="./assets/svg/othb.svg" alt="Other">
+                    </div>
+                  </span>
+                </label>
+              </div>
+              <div class="auto-flex2">
+                <button type="button" id=encrybut style="visibility: hidden; display: none;" onclick="encryptroot();"></button>
+                <label for="encrybut" tabindex="8">
+                  <span style="cursor:pointer">
+                    <div class="decrypt-bu-ontent-sel">
+                      <div class="overlap-group1-1 border-class-1">
+                        <div class="decrypt-now-text valign-text-middle blackopsone-normal-white-58-2px">Encrypt</div>
+                      </div>
+                    </div>
+                  </span>
+                </label>
+                <button type="button" id=clearbut style="visibility: hidden; display: none;"></button>
+                <div class="overlap-group2 border-class-1">
+                  <label for="clearbut" tabindex="9" onclick="clearfunc();">
+                    <span style="cursor:pointer">
+                      <div class="decrypt-now-text valign-text-middle blackopsone-normal-white-58-2px">Clear</div>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-root-frame">
+          <p class="credit-2239 secularone-normal-white-16px">
+            <span class="span1">A fun project by </span><span onclick="linkedins();" style="cursor:pointer; color:navyblue;" class="span2" id=credlinks>team Kaveri</span>
+          </p>
+          <span 
+            class="github valign-text-middle secularone-normal-azure-radiance-16px"
+            style="cursor: pointer; color:navyblue;"
+            >
+            <span onclick="window.open('https://chennai.vit.ac.in/member/dr-gayathri-devi-s/')">Built under the guidance of Dr. Gayatri Devi for course CSE3086</span>
+          </span>
+        </div>        <script type="text/javascript">
+          var size = [window.width,window.height];
+          $(window).resize(function(){
+            window.resizeTo(1040,616);
+          });
+        </script>
+        <style type="text/css">
+              .loginrootframe .footer-root-frame {
+                align-items: center;
+                background-color: var(--yellow-sunshine);
+                height: 43px;
+                margin-top: 48px;
+                padding: 8px 12.3px;
+                width: 1024px;
+                justify-content: space-between;
+                display: flex;
+              }
+              .loginrootframe .credit {
+                height: 24px;
+                letter-spacing: 0px;
+                min-height: 24px;
+                text-align: center;
+                width: 311px;
+              }
+              .loginrootframe .github {
+                height: 17px;
+                letter-spacing: 0px;
+                min-height: 17px;
+                text-align: center;
+              }
+        </style>
+        <script type="text/javascript">
+          function linkedins() {
+              window.open('https://www.linkedin.com/in/guruprasaath-manirajan-5947031b9/');
+              window.open('https://www.linkedin.com/in/sri-saravanan-706a7025b/');
+              window.open('https://www.linkedin.com/in/m-hariharan-292b86251/');
+          };
+        </script>
+  </body>
+</html>

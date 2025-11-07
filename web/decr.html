@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PySafe</title>
+    <link rel="stylesheet" href="./assets/css/decr.css">
+    <script src="/eel.js"></script>
+    <script src="./assets/cjs/decr.js"></script>
+    <script src="./assets/cjs/main.js"></script>
+    <script src="./assets/js/jqsm.js"></script>
+    <link rel="icon" href="./assets/ico/bear_icon.png"/>
+  </head>
+  <body onload="fetchindex(); loadlib();">
+    <script type="text/javascript">
+      window.resizeTo(1040, 615)
+    </script>
+    <div class="searchresultsframe">
+      <div class="overlap-group">
+        <div class="top">
+          <img src="./assets/svg/titbear.svg">
+          <h1 class="py-safe valign-text-middle secularone-normal-white-64px">PySafe</h1>
+        </div>
+        <div class="settings-content-root-frame">
+          <div class="decryption-page valign-text-middle anton-normal-white-42-1px">Decryption Page</div>
+          <div class="inner-content-frame">
+            <div class="select-a-library-frame">
+              <div class="overlap-group-1">
+                <div class="select-a-library-text valign-text-middle anton-normal-black-32px">Select a library:</div>
+                <div class="x-drop-down">
+                  <div class="custom-select" style="height:40px; width:754px;">
+                    <select id="selectedlib" style="height:46px; width:754px;" onchange="libtype_check();">
+                      <option value="0">Choose a Library to decrypt</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="target-frame">
+              <div class="overlap-group-1">
+                <div class="target-text valign-text-middle anton-normal-black-32px">Where to decrypt to?</div>
+                <div class="x-drop-down" id="selectfp">
+                  <button type="file" name="file-7[]" id="file-7" class="inputfile inputfile-6" data-multiple-caption="{count} files selected" onclick="fileselhandler();"></button>
+                  <label for="file-7" id="but">
+                    <span></span>&nbsp;
+                    <strong id="butsec">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                        <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/>
+                      </svg>
+                       Select
+                    </strong>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button id="decryptbutton" type="button" name="button" style="display:none; visibility:hidden;" onclick="decrypt()"></button>
+            <label for="decryptbutton">
+              <span style="cursor: pointer;">
+                <div class="decrypt-button border-class-1">
+                  <div class="decrypt-text valign-text-middle anton-normal-black-26px" id="decrtext">Decrypt</div>
+                </div>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="home-button" onclick="window.location.href='./home.html';" style="cursor: pointer;">
+        <img
+          class="home"
+          src="./assets/png/hbt.png"
+        />
+      </div>
+      <div class="logout-button" style="cursor:pointer" onclick="logout();">
+        <img
+          class="logout"
+          src="./assets/png/lbt.png"
+        />
+      </div>
+        <div class="footer-root-frame">
+          <p class="credit-2239 secularone-normal-white-16px">
+            <span class="span1">A fun project by </span><span onclick="linkedins();" style="cursor:pointer; color:navyblue;" class="span2" id=credlinks>team Kaveri</span>
+          </p>
+          <span 
+            class="github valign-text-middle secularone-normal-azure-radiance-16px"
+            style="cursor: pointer; color:navyblue;"
+            >
+            <span onclick="window.open('https://chennai.vit.ac.in/member/dr-gayathri-devi-s/')">Built under the guidance of Dr. Gayatri Devi for course CSE3086</span>
+          </span>
+        </div>      <script type="text/javascript">
+        var size = [window.width,window.height];
+        $(window).resize(function(){
+          window.resizeTo(1040,616);
+        });
+      </script>
+      <style type="text/css">
+            .loginrootframe .footer-root-frame {
+              align-items: center;
+              background-color: var(--yellow-sunshine);
+              height: 43px;
+              margin-top: 48px;
+              padding: 8px 12.3px;
+              width: 1024px;
+              justify-content: space-between;
+              display: flex;
+            }
+            .loginrootframe .credit {
+              height: 24px;
+              letter-spacing: 0px;
+              min-height: 24px;
+              text-align: center;
+              width: 311px;
+            }
+            .loginrootframe .github {
+              height: 17px;
+              letter-spacing: 0px;
+              min-height: 17px;
+              text-align: center;
+            }
+      </style>
+      <script type="text/javascript">
+        function linkedins() {
+            window.open('https://www.linkedin.com/in/guruprasaath-manirajan-5947031b9/');
+            window.open('https://www.linkedin.com/in/sri-saravanan-706a7025b/');
+            window.open('https://www.linkedin.com/in/m-hariharan-292b86251/');
+        };
+      </script>
+  </body>
+</html>
